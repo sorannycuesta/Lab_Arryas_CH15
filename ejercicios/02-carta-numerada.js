@@ -17,8 +17,18 @@
 // Pista: arreglo vacío → for → push de un texto → return al final.
 // ============================================================
 
+// ============================================================
+// Ejercicio 02 · Carta numerada
+// ============================================================
+
 function cartaNumerada(menu) {
-  // Tu código aquí
+  const resultado = [];
+
+  for (let i = 0; i < menu.length; i++) {
+    resultado.push(`${i}. ${menu[i].nombre} · $${menu[i].precio}`);
+  }
+
+  return resultado;
 }
 
 // No borres esta línea: es la puerta por donde el test usa tu función
